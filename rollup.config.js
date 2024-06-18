@@ -8,13 +8,6 @@ export default {
   external: ['jszip'],
   input: './src/index.js',
   output: {
-<<<<<<< HEAD
-    file: 'dist/reader.js',
-    name: 'fileReader',
-    format: 'umd'
-  }
-}
-=======
     file: './dist/index.js',
     format: 'umd',
     name: 'fileReader',
@@ -29,4 +22,3 @@ export default {
     nodePolyfills(),
   ]
 }
->>>>>>> 2dbd97a382ddd7248691214dbdc4585b18393946
