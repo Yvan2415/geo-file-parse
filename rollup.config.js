@@ -1,8 +1,24 @@
+import { nodeResolve } from '@rollup/plugin-node-resolve'
+import commonjs from '@rollup/plugin-commonjs'
+import nodePolyfills from 'rollup-plugin-node-polyfills'
+import json from '@rollup/plugin-json'
+
+
 export default {
-  input: './lib/index.js',
+  external: ['jszip'],
+  input: './src/index.js',
   output: {
-    file: 'dist/geo-file-reader.js',
+    file: './dist/index.js',
+    format: 'umd',
     name: 'fileReader',
-    format: 'umd'
-  }
+    globals: {
+      jszip: 'JSZip'
+    }
+  },
+  plugins: [
+    json(),
+    nodeResolve(),
+    commonjs(),
+    nodePolyfills(),
+  ]
 }
