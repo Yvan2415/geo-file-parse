@@ -1,21 +1,31 @@
 {
   "name": "geo-file-reader",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "解析常见的地理信息文件",
+  "main": "./dist/index.js",
   "type": "module",
-  "directories": {
-    "lib": "lib"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Yvan2415/geo-file-reader.git"
   },
   "scripts": {
-    "build": "rollup -c rollup.config.js",
-    "dev": "rollup -c rollup.config.js -w"
+    "dev": "rollup -c rollup.config.js -w",
+    "build": "rollup -c rollup.config.js"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["geojson", "shapefile", "kml", "zip"],
+  "author": "yvan.fang",
   "license": "ISC",
   "devDependencies": {
+    "@rollup/plugin-commonjs": "^26.0.1",
+    "@rollup/plugin-json": "^6.1.0",
     "@rollup/plugin-node-resolve": "^15.2.3",
-    "rollup": "^4.18.0"
+    "rollup-plugin-node-polyfills": "^0.2.1"
+  },
+  "dependencies": {
+    "@mapbox/togeojson": "^0.16.2",
+    "jszip": "^3.10.1",
+    "lodash": "^4.17.21",
+    "shpjs": "^5.0.1",
+    "xmldom": "^0.6.0"
   }
 }
