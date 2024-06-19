@@ -5,19 +5,25 @@ import json from '@rollup/plugin-json'
 
 
 export default {
-  external: ['jszip'],
-  input: './src/index.js',
+  external: [
+    'jszip',
+    'shpjs',
+    '@mapbox/togeojson'
+  ],
+  input: './lib/index.js',
   output: {
     file: './dist/index.js',
-    format: 'umd',
+    format: 'es',
     name: 'fileReader',
     globals: {
-      jszip: 'JSZip'
+      jszip: 'JSZip',
+      shpjs: 'shpjs',
+      '@mapbox/togeojson': 'toGeoJSON'
     }
   },
   plugins: [
     json(),
-    nodeResolve(),
+    nodeResolve({ browser: true }),
     commonjs(),
     nodePolyfills(),
   ]
