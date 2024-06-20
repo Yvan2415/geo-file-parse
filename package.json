@@ -1,6 +1,6 @@
 {
   "name": "geo-file-parse",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "解析常见的地理信息文件",
   "main": "./dist/index.js",
   "type": "module",
