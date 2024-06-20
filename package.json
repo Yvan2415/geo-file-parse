@@ -1,6 +1,6 @@
 {
   "name": "geo-file-reader",
-  "version": "1.0.2",
+  "version": "0.0.1",
   "description": "解析常见的地理信息文件",
   "main": "./lib/index.js",
   "type": "module",
