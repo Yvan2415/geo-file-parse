@@ -1,12 +1,12 @@
 {
-  "name": "geo-file-reader",
+  "name": "geo-file-parse",
   "version": "0.0.1",
   "description": "解析常见的地理信息文件",
   "main": "./lib/index.js",
   "type": "module",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Yvan2415/geo-file-reader.git"
+    "url": "https://github.com/Yvan2415/geo-file-parse.git"
   },
   "scripts": {
     "dev": "rollup -c rollup.config.js -w",
