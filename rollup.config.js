@@ -10,7 +10,7 @@ export default [
     input: './lib/index.js',
     output: {
       file: './dist/index.min.js',
-      format: 'amd',
+      format: 'iife',
       name: 'fileReader',
     },
     plugins: [
