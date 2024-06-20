@@ -23,7 +23,7 @@ export default {
   },
   plugins: [
     json(),
-    nodeResolve({ browser: true }),
+    nodeResolve(),
     commonjs(),
     nodePolyfills(),
   ]
