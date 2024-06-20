@@ -13,7 +13,7 @@ export default {
   input: './lib/index.js',
   output: {
     file: './dist/index.js',
-    format: 'es',
+    format: 'umd',
     name: 'fileReader',
     globals: {
       jszip: 'JSZip',
